@@ -47,6 +47,7 @@ const Sidebar = () => {
         '& .pro-sidebar-inner': {
           background: `${colors.primary[400]} !important`,
         },
+
         '& .pro-icon-wrapper': {
           backgroundColor: 'transparent !important',
         },
@@ -64,11 +65,14 @@ const Sidebar = () => {
       <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape='square'>
           {/* LOGO AND MENU ICON */}
+
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
-              margin: '10px 0 20px 0',
+              // padding: '10px ',
+              padding: '10px 20px 0 0',
+              margin: '15px 0 25px 0',
               color: colors.grey[100],
             }}
           >
@@ -78,6 +82,7 @@ const Sidebar = () => {
                 justifyContent='space-between'
                 alignItems='center'
                 ml='15px'
+                padding='2px 2px'
               >
                 <Typography variant='h3' color={colors.grey[100]}>
                   ADMINIS
