@@ -4,7 +4,7 @@ import { tokens } from '../../theme'
 import { mockDataContacts } from '../../data/mockData'
 import Header from '../../components/Header'
 
-const Team = () => {
+const Contacts = () => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
 
@@ -66,6 +66,10 @@ const Team = () => {
           '& .MuiDataGrid-toolbarContainer .MuiButton-text': {
             color: `${colors.grey[100]} !important`,
           },
+          '& .MuiButtonBase-root:focus': { outline: 'none !important' }, //botones filtro
+          '& .MuiInput-root::after': {
+            color: `red !important`,
+          },
         }}
       >
         <DataGrid
@@ -79,4 +83,4 @@ const Team = () => {
   )
 }
 
-export default Team
+export default Contacts

@@ -189,6 +189,28 @@ export const themeSettings = (mode) => {
         fontSize: 14,
       },
     },
+    components: {
+      MuiInputLabel: {
+        //INPUT LABEL COLOR
+        styleOverrides: {
+          root: {
+            '&.Mui-focused': {
+              color: colors.greenAccent[300],
+            },
+          },
+        },
+      },
+      MuiInput: {
+        styleOverrides: {
+          //INPUT :after color
+          root: {
+            '&:after': {
+              borderBottom: `2px solid ${colors.greenAccent[300]}`,
+            },
+          },
+        },
+      },
+    },
   }
 }
 
