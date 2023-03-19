@@ -85,7 +85,7 @@ const Sidebar = () => {
                 padding='2px 2px'
               >
                 <Typography variant='h3' color={colors.grey[100]}>
-                  ADMINIS
+                  ADMIN
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -101,7 +101,7 @@ const Sidebar = () => {
                   alt='profile-user'
                   width='100px'
                   height='100px'
-                  src={`../../../public/user.png`}
+                  src={`https://lh3.googleusercontent.com/a/AGNmyxYFEFikLJmHK6Cf200fvQyxQtO9RFPuOuqrbCVD=s96-c`}
                   style={{ cursor: 'pointer', borderRadius: '50%' }}
                 />
               </Box>
@@ -112,10 +112,10 @@ const Sidebar = () => {
                   fontWeight='bold'
                   sx={{ m: '10px 0 0 0' }}
                 >
-                  Ed Roh
+                  José C.
                 </Typography>
                 <Typography variant='h5' color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  MUI - Testing project
                 </Typography>
               </Box>
             </Box>
