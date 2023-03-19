@@ -9,6 +9,7 @@ const BarChart = (isDashboard = false) => {
   const colors = tokens(theme.palette.mode)
   return (
     <ResponsiveBar
+      height={isDashboard && 230}
       data={data}
       theme={{
         axis: {
